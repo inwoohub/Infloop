@@ -1,0 +1,43 @@
+# Django settings (real secrets)
+backend/config/settings.py
+
+# node_modules 폴더 제외
+node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtualenv
+venv/
+ENV/
+env/
+.venv/
+
+# Django stuff
+*.log
+*.pot
+*.pyc
+*.pyc.*
+db.sqlite3
+media/
+staticfiles/
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+
+# Environment variables
+.env
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db

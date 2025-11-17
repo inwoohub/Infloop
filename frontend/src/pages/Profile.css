@@ -1,0 +1,192 @@
+.profile_page{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 90%;
+    max-width: 100%;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.skill-input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .edit-button, .save-button, .cancel-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .edit-button {
+    background-color: #9183d6;
+    color: white;
+    width: 5vw;
+    height: 4vh;
+    font-size: 10px;
+    white-space: nowrap;  /* ✅ 줄바꿈 방지 */
+    text-align: center;  /* ✅ 텍스트 가운데 정렬 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4vh;
+    margin-left: 1vw;
+  }
+  
+  .save-button {
+    background-color: #28a745;
+    color: white;
+    margin-bottom: 1vh;
+    width: 3vw;
+    height: 4vh;
+    font-size: 10px;
+    white-space: nowrap;  /* ✅ 줄바꿈 방지 */
+    text-align: center;  /* ✅ 텍스트 가운데 정렬 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cancel-button {
+    background-color: #dc3545;
+    color: white;
+    margin-bottom: 1vh;
+    width: 3vw;
+    height: 4vh;
+    font-size: 10px;
+    white-space: nowrap;  /* ✅ 줄바꿈 방지 */
+    text-align: center;  /* ✅ 텍스트 가운데 정렬 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profile_header{
+    width: 100%;
+    height: 10vh;
+    gap: 0px; /* 아이템 간 간격 */
+    display: flex;   /* Flexbox 적용 (수평 정렬) */
+    justify-content: flex-start; /* 왼쪽 정렬 */
+    font-size: 12px;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    margin-bottom: 8vh;
+  }
+
+  .profile-icon {
+    font-size: 100px; /* ✅ 아이콘 크기 설정 */
+    color: #9183d6; /* 아이콘 색상 변경 (선택) */
+    margin-bottom: 5vh;
+  }
+
+  .skill-container {
+    display: flex;
+    align-items: center; /* ✅ 수직 정렬 */
+    gap: 5px; /* ✅ 텍스트와 입력 필드 사이 여백 */
+    margin-left: 0.2vw;
+    
+  }
+  
+  .skill-container p {
+    margin: 0; /* ✅ 기본 마진 제거 */
+    display: inline; /* ✅ 같은 줄에 표시 */
+  }
+  
+  .skill-container input {
+    margin-left: 10px; /* ✅ 입력 칸 간격 조정 */
+  }
+  
+  .profile-container {
+    display: flex; /* ✅ Flexbox 적용 (가로 정렬) */
+    align-items: center; /* ✅ 세로 중앙 정렬 */
+    justify-content: space-between; /* ✅ 좌우 끝으로 배치 */
+    width: 100%;
+    height: 50vh;
+    margin: 0 auto; /* ✅ 가운데 정렬 */
+    padding: 20px;
+    background-color: #f9f9f9; /* ✅ 배경색 추가 */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* ✅ 왼쪽 (아이콘 + 비밀번호 변경) */
+.profile-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ✅ 아이콘 + 텍스트 중앙 정렬 */
+    justify-content: center;
+    width: 30%; /* ✅ 전체 너비의 30% 차지 */
+    margin-bottom: 10vh;
+  }
+
+  /* ✅ 오른쪽 (이름, 학번, 이메일, 기술 스택) */
+.profile-right {
+    width: 65%; /* ✅ 전체 너비의 65% 차지 */
+    margin-bottom: 10vh;
+  }
+
+  .profile-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 30vh;
+  }
+
+  .profile-info p {
+    margin-bottom: 3vh;  /* ✅ 각 문단 아래 간격 조절 */
+  }
+  
+  .password-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .password-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .password-btn-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .password-change-btn, .save-button, .cancel-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .save-button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .cancel-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .profile-left p {
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .profile-left p:hover {
+    color: #007bff; /* 파란색으로 강조 */
+  }
+  

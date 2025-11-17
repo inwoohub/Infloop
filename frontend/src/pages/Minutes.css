@@ -1,0 +1,518 @@
+/* 전체 래퍼 */
+.Minutes_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f8f9fa;
+}
+
+/* 메인 컨테이너 */
+.Minutes_container {
+  flex: 1;
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* 내용물 컨테이너 (1200px 제한) */
+.Minutes_content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 헤더 섹션 */
+.Minutes_header {
+  margin-bottom: 40px;
+}
+
+.Minutes_titleSection {
+  text-align: center;
+}
+
+.Minutes_pageTitle {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.Minutes_titleIcon {
+  color: #4285f4;
+  font-size: 40px;
+}
+
+.Minutes_subtitle {
+  font-size: 18px;
+  color: #666;
+  margin: 0;
+}
+
+/* 에디터 카드 */
+.Minutes_editorCard {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  padding: 32px;
+  margin-bottom: 40px;
+}
+
+/* 제목 입력 */
+.Minutes_titleInput {
+  width: 100%;
+  padding: 16px 20px;
+  font-size: 20px;
+  font-weight: 600;
+  border: 2px solid #e1e4e8;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+  background-color: #f8f9fa;
+}
+
+.Minutes_titleInput:focus {
+  outline: none;
+  border-color: #4285f4;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.1);
+}
+
+/* 오디오 섹션 */
+.Minutes_audioSection {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.Minutes_fileLabel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  background-color: #f8f9fa;
+  border: 2px dashed #d1d5db;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #666;
+  font-size: 15px;
+}
+
+.Minutes_fileLabel:hover {
+  border-color: #4285f4;
+  background-color: rgba(66, 133, 244, 0.05);
+  color: #4285f4;
+}
+
+.Minutes_fileLabel input[type="file"] {
+  display: none;
+}
+
+.Minutes_sttBtn {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #34a853, #43a047);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(52, 168, 83, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.Minutes_sttBtn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(52, 168, 83, 0.3);
+}
+
+.Minutes_sttBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* 에디터 래퍼 */
+.Minutes_editorWrapper {
+  margin-bottom: 24px;
+  border: 2px solid #e1e4e8;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* 액션 버튼들 */
+.Minutes_actions {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+}
+
+.Minutes_aiBtn,
+.Minutes_draftBtn,
+.Minutes_saveBtn {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.Minutes_aiBtn {
+  background: linear-gradient(135deg, #9333ea, #a855f7);
+  color: white;
+  box-shadow: 0 4px 12px rgba(147, 51, 234, 0.2);
+}
+
+.Minutes_aiBtn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(147, 51, 234, 0.3);
+}
+
+.Minutes_draftBtn {
+  background-color: #fbbf24;
+  color: #78350f;
+}
+
+.Minutes_draftBtn:hover {
+  background-color: #f59e0b;
+  transform: translateY(-2px);
+}
+
+.Minutes_saveBtn {
+  background: linear-gradient(135deg, #4285f4, #5a95f5);
+  color: white;
+  box-shadow: 0 4px 12px rgba(66, 133, 244, 0.2);
+}
+
+.Minutes_saveBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(66, 133, 244, 0.3);
+}
+
+/* 저장된 회의록 섹션 */
+.Minutes_savedSection {
+  margin-top: 60px;
+}
+
+.Minutes_sectionTitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.Minutes_savedList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 24px;
+}
+
+/* 저장된 회의록 카드 */
+.Minutes_savedCard {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border: 1px solid #e1e4e8;
+}
+
+.Minutes_savedCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: #4285f4;
+}
+
+.Minutes_savedHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e1e4e8;
+}
+
+.Minutes_savedHeader h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.Minutes_savedDate {
+  font-size: 14px;
+  color: #666;
+}
+
+.Minutes_savedContent {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.Minutes_savedContent::-webkit-scrollbar {
+  width: 6px;
+}
+
+.Minutes_savedContent::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.Minutes_savedContent::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.Minutes_savedContent ul {
+  list-style-position: inside;
+  padding-inline-start: 1.5em;
+  margin: 0 0 1em 0;
+}
+
+.Minutes_savedContent ul li {
+  margin-bottom: 0.5em;
+}
+
+.Minutes_savedActions {
+  display: flex;
+  gap: 12px;
+}
+
+.Minutes_wordBtn,
+.Minutes_editBtn,
+.Minutes_deleteBtn {
+  flex: 1;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.Minutes_wordBtn {
+  background-color: #6366f1;
+  color: white;
+}
+
+.Minutes_wordBtn:hover {
+  background-color: #4f46e5;
+  transform: translateY(-2px);
+}
+
+.Minutes_editBtn {
+  background-color: #10b981;
+  color: white;
+}
+
+.Minutes_editBtn:hover {
+  background-color: #059669;
+  transform: translateY(-2px);
+}
+
+.Minutes_deleteBtn {
+  background-color: #ef4444;
+  color: white;
+}
+
+.Minutes_deleteBtn:hover {
+  background-color: #dc2626;
+  transform: translateY(-2px);
+}
+
+/* 모달 */
+.Minutes_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.Minutes_modalContent {
+  background: white;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 900px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.Minutes_modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px;
+  border-bottom: 1px solid #e1e4e8;
+}
+
+.Minutes_modalHeader h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.Minutes_modalClose {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background-color: #f8f9fa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #666;
+}
+
+.Minutes_modalClose:hover {
+  background-color: #ef4444;
+  color: white;
+  transform: rotate(90deg);
+}
+
+.Minutes_modalBody {
+  flex: 1;
+  padding: 32px;
+  overflow-y: auto;
+}
+
+.Minutes_modalBody .Minutes_titleInput {
+  margin-bottom: 24px;
+}
+
+.Minutes_modalFooter {
+  padding: 24px 32px;
+  border-top: 1px solid #e1e4e8;
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.Minutes_cancelBtn {
+  padding: 12px 28px;
+  background-color: #f3f4f6;
+  color: #666;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.Minutes_cancelBtn:hover {
+  background-color: #e5e7eb;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .Minutes_container {
+    padding: 20px 16px;
+  }
+
+  .Minutes_pageTitle {
+    font-size: 28px;
+  }
+
+  .Minutes_editorCard {
+    padding: 20px;
+  }
+
+  .Minutes_actions {
+    flex-direction: column;
+  }
+
+  .Minutes_aiBtn,
+  .Minutes_draftBtn,
+  .Minutes_saveBtn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .Minutes_savedList {
+    grid-template-columns: 1fr;
+  }
+
+  .Minutes_audioSection {
+    flex-direction: column;
+  }
+
+  .Minutes_fileLabel,
+  .Minutes_sttBtn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* 로딩 오버레이 (Loading 컴포넌트와 연동) */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}

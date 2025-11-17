@@ -1,0 +1,426 @@
+/* 전체 래퍼 */
+.Report_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f8f9fa;
+}
+
+/* 메인 컨테이너 */
+.Report_container {
+  flex: 1;
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* 내용물 컨테이너 (1200px 제한) */
+.Report_content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 에디터 카드 */
+.Report_editorCard {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  padding: 32px;
+  margin-bottom: 40px;
+}
+
+/* 제목 섹션 */
+.Report_titleSection {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.Report_pageTitle {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.Report_titleIcon {
+  color: #4285f4;
+  font-size: 40px;
+}
+
+/* 보고서 종류 선택 */
+.Report_typeSelect {
+  width: 100%;
+  padding: 16px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  border: 2px solid #e1e4e8;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.Report_typeSelect:focus {
+  outline: none;
+  border-color: #4285f4;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.1);
+}
+
+/* 액션 버튼들 */
+.Report_actions {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+}
+
+.Report_aiBtn,
+.Report_saveBtn {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.Report_aiBtn {
+  background: linear-gradient(135deg, #9333ea, #a855f7);
+  color: white;
+  box-shadow: 0 4px 12px rgba(147, 51, 234, 0.2);
+}
+
+.Report_aiBtn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(147, 51, 234, 0.3);
+}
+
+.Report_aiBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.Report_saveBtn {
+  background: linear-gradient(135deg, #4285f4, #5a95f5);
+  color: white;
+  box-shadow: 0 4px 12px rgba(66, 133, 244, 0.2);
+}
+
+.Report_saveBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(66, 133, 244, 0.3);
+}
+
+/* 저장된 보고서 섹션 */
+.Report_savedSection {
+  margin-top: 60px;
+}
+
+.Report_sectionTitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.Report_savedList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 24px;
+}
+
+/* 저장된 보고서 카드 */
+.Report_savedCard {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border: 1px solid #e1e4e8;
+}
+
+.Report_savedCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: #4285f4;
+}
+
+.Report_savedHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e1e4e8;
+}
+
+.Report_savedHeader h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.Report_savedDate {
+  font-size: 14px;
+  color: #666;
+}
+
+.Report_savedContent {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.Report_savedContent::-webkit-scrollbar {
+  width: 6px;
+}
+
+.Report_savedContent::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.Report_savedContent::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.Report_savedContent ul {
+  list-style-position: inside;
+  padding-inline-start: 1.5em;
+  margin: 0 0 1em 0;
+}
+
+.Report_savedContent ul li {
+  margin-bottom: 0.5em;
+}
+
+.Report_savedActions {
+  display: flex;
+  gap: 12px;
+}
+
+.Report_wordBtn,
+.Report_editBtn,
+.Report_deleteBtn {
+  flex: 1;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.Report_wordBtn {
+  background-color: #6366f1;
+  color: white;
+}
+
+.Report_wordBtn:hover {
+  background-color: #4f46e5;
+  transform: translateY(-2px);
+}
+
+.Report_editBtn {
+  background-color: #10b981;
+  color: white;
+}
+
+.Report_editBtn:hover {
+  background-color: #059669;
+  transform: translateY(-2px);
+}
+
+.Report_deleteBtn {
+  background-color: #ef4444;
+  color: white;
+}
+
+.Report_deleteBtn:hover {
+  background-color: #dc2626;
+  transform: translateY(-2px);
+}
+
+/* 모달 */
+.Report_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.Report_modalContent {
+  background: white;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 900px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.Report_modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px;
+  border-bottom: 1px solid #e1e4e8;
+}
+
+.Report_modalHeader h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.Report_modalClose {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background-color: #f8f9fa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #666;
+}
+
+.Report_modalClose:hover {
+  background-color: #ef4444;
+  color: white;
+  transform: rotate(90deg);
+}
+
+.Report_modalBody {
+  flex: 1;
+  padding: 32px;
+  overflow-y: auto;
+}
+
+.Report_modalBody .Report_typeSelect {
+  margin-bottom: 24px;
+}
+
+.Report_modalFooter {
+  padding: 24px 32px;
+  border-top: 1px solid #e1e4e8;
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.Report_cancelBtn {
+  padding: 12px 28px;
+  background-color: #f3f4f6;
+  color: #666;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.Report_cancelBtn:hover {
+  background-color: #e5e7eb;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .Report_container {
+    padding: 20px 16px;
+  }
+
+  .Report_pageTitle {
+    font-size: 28px;
+  }
+
+  .Report_editorCard {
+    padding: 20px;
+  }
+
+  .Report_actions {
+    flex-direction: column;
+  }
+
+  .Report_aiBtn,
+  .Report_saveBtn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .Report_savedList {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 로딩 오버레이 (Loading 컴포넌트와 연동) */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}

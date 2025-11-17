@@ -1,0 +1,191 @@
+.Invite_app {
+    display: flex;
+    justify-content: center; /* ✅ 가운데 정렬 */
+    align-items: center; /* ✅ 세로 방향도 중앙 정렬 */
+    height: 100vh; /* 화면 전체 높이 설정 */
+    width: 100%; /* 전체 너비 설정 */
+}
+  
+  
+.Invite_page{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 90%;
+    max-width: 100%;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+}
+
+/* .Invite_page1{
+    position: absolute;
+    margin: 0 auto;
+    top: 7%;
+    bottom: 0%;
+    left: 15%;
+    right: 0%;
+    width: auto;
+    max-width: none;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    overflow: hidden;
+} */
+
+.Invite_page2{
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+}
+
+.Invite_top{
+    margin-top: 25px;
+    display: flex;
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+
+.Invite_header{
+    gap: 0px; /* 아이템 간 간격 */
+    font-size: 10px;
+    display: flex;   /* Flexbox 적용 (수평 정렬) */
+    justify-content: flex-start; /* 왼쪽 정렬 */
+    gap: 17vw; /* 요소 사이 간격 조절 */
+
+  }
+
+  /* 초대 창 크기 조절 */
+.Invite_modal {
+    background: white;
+    width: 50%;  /* 🔥 창 크기 줄이기 */
+    height: 80%; /* 🔥 창 높이 줄이기 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Invite_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* 배경 어둡게 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Invite_close_btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.Invite_lists {
+    margin-top: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 100%;
+    height: 60vh; /* ✅ 전체 높이의 60% 사용 */
+    min-height: 300px; /* ✅ 최소 높이 설정 */
+}
+
+.Invite_user_list, .Invite_selected_users {
+    max-height: 500px;  /* ✅ 최대 높이 설정 (조정 가능) */
+    width: 45%;
+    border-radius: 5px;
+    background: #FFFFFF;
+    justify-content: flex-start; 
+    overflow-y: auto;  /* ✅ 스크롤 가능하게 설정 */
+    /* overflow-x: hidden; */
+    margin-right: 20px;
+    
+    
+}
+
+.Invite_user_list ul, .Invite_selected_users ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.Invite_user_list li, .Invite_selected_users li {
+    padding: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+    /* border-bottom: 1px solid gray; */
+}
+
+.Invite_user_list li:hover, .Invite_selected_users li:hover {
+    background: #ddd;
+}
+
+.Invite_search-bar { 
+    max-width: 30px; 
+    min-width: 70%; 
+    padding: 6px;
+    border-radius: 12px;
+    border: 1px solid #613939;
+    margin-left: 15%;
+  }
+
+  .Invite_user_list li:hover {
+    background: #ddd;
+}
+
+/* ✅ 스크롤바 스타일 (모든 브라우저 호환) */
+.Invite_user_list::-webkit-scrollbar {
+    width: 8px; /* 스크롤바 너비 */
+}
+
+.Invite_user_list::-webkit-scrollbar-thumb {
+    background: #878787; /* 스크롤바 색상 */
+    border-radius: 8px;
+}
+
+.Invite_user_list::-webkit-scrollbar-track {
+    background: #D9D9D9; /* 스크롤바 배경 */
+}
+
+/* ✅ 버튼을 감싸는 부모 요소 스타일 */
+.Invite_button_container {
+    display: flex;
+    justify-content: center;  /* ✅ 버튼을 중앙으로 정렬 */
+    align-items: center;
+    width: 100%;  /* ✅ 부모 요소가 전체 너비를 가지도록 설정 */
+    height: 10vh;
+    margin-left: 11vw;
+}
+
+.Invite_Invitebut{
+    background-color: #f29c46; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 30%;
+    font-weight: bold;
+    height: 5vh;
+  }
+
+.Invite_Invitebut:hover {
+    background-color: #e6923e; 
+}

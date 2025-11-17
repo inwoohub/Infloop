@@ -1,0 +1,361 @@
+/* 전체 래퍼 */
+.ProjectPage {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f9fafb;
+}
+
+/* 메인 컨테이너 */
+.ProjectContainer {
+  flex: 1;
+  width: 60vw;
+  padding: 40px 20px;
+  margin-top: 56px;
+  background-color: #f9fafb;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* 내용물 컨테이너 (1200px 제한) */
+.ProjectContent {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 타이틀 */
+.ProjectTitle {
+  font-size: 36px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* 날짜 + 팀원 프로필 섹션 */
+.DateAndTeamRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f3f4f6;
+}
+
+/* 날짜 선택 */
+.DatePickers {
+  display: flex;
+  gap: 1rem;
+}
+
+.DatePickerContainer {
+  position: relative;
+}
+
+.DateInput {
+  padding: 0.75rem 1rem;
+  padding-right: 3rem;
+  font-size: 0.875rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  min-width: 160px;
+  transition: all 0.3s ease;
+  background-color: #f9fafb;
+}
+
+.DateInput:focus {
+  outline: none;
+  border-color: #3b82f6;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.CalendarIcon {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+  pointer-events: none;
+  font-size: 0.875rem;
+}
+
+/* 팀원 프로필 */
+.TeamProfiles {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.ProfileCircle {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #ef4444, #f87171);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ProfileCircle:nth-child(2) { 
+  background: linear-gradient(135deg, #3b82f6, #60a5fa); 
+}
+.ProfileCircle:nth-child(3) { 
+  background: linear-gradient(135deg, #10b981, #34d399); 
+}
+.ProfileCircle:nth-child(4) { 
+  background: linear-gradient(135deg, #f59e0b, #fbbf24); 
+}
+.ProfileCircle:nth-child(5) { 
+  background: linear-gradient(135deg, #8b5cf6, #a78bfa); 
+}
+
+/* 폼 그룹 */
+.ProjectFormGroup {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f3f4f6;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* 라벨 */
+.ProjectLabel {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+/* 프로젝트 이름 입력 폼 */
+.ProjectForm {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f3f4f6;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.ProjectInputWrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.ProjectInput {
+  flex: 1;
+  padding: 1rem 1.25rem;
+  padding-right: 3.5rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: #f9fafb;
+}
+
+.ProjectInput:focus {
+  outline: none;
+  border-color: #3b82f6;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.ProjectSubmitButton {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+  visibility: hidden;
+}
+
+.ProjectSubmitButton:hover {
+  transform: translateY(-50%) translateY(-2px);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.3);
+}
+
+/* 텍스트 에리어 */
+.ProjectTextArea {
+  width: 100%;
+  min-height: 120px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  font-size: 0.9375rem;
+  resize: vertical;
+  transition: all 0.3s ease;
+  background-color: #f9fafb;
+  line-height: 1.6;
+}
+
+.ProjectTextArea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* 기술 스택 컨테이너 */
+.TechStackContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.TechCheckbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background-color: #f9fafb;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.TechCheckbox:hover {
+  background-color: #eff6ff;
+  border-color: #3b82f6;
+}
+
+.TechCheckbox input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  accent-color: #3b82f6;
+  cursor: pointer;
+}
+
+.TechCheckbox input[type="checkbox"]:checked + span,
+.TechCheckbox:has(input[type="checkbox"]:checked) {
+  background-color: #eff6ff;
+  border-color: #3b82f6;
+  color: #1e40af;
+}
+
+/* 애니메이션 */
+@keyframes moveAndRotate {
+  0% { 
+    transform: translateY(-50%) rotate(0deg); 
+  }
+  100% { 
+    transform: translateY(-50%) rotate(360deg); 
+  }
+}
+
+.moveAndRotate {
+  animation: moveAndRotate 1s ease-in-out;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .ProjectContainer {
+    padding: 20px 16px;
+    padding-top: 2rem;
+  }
+
+  .ProjectTitle {
+    font-size: 28px;
+  }
+
+  .DateAndTeamRow {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .DatePickers {
+    justify-content: center;
+  }
+
+  .TeamProfiles {
+    justify-content: center;
+  }
+
+  .TechStackContainer {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .ProjectForm,
+  .ProjectFormGroup {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .DatePickers {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .DateInput {
+    width: 100%;
+  }
+
+  .ProfileCircle {
+    width: 40px;
+    height: 40px;
+    font-size: 0.6875rem;
+  }
+
+  .TechStackContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.ProjectCreation_footer{
+  justify-content: right;
+  align-items: center;
+  display: flex;
+}
+
+.ProjectCreation_footer_btn {
+  background-color: #f29c46;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  height: 50px;
+  width: 30%;
+  margin-top: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.ProjectCreation_footer_btn:hover{
+  background-color: #e6923e;
+}

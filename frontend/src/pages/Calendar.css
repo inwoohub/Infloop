@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Ownglyph_StudyHard-Rg';
+}
+
+.Calandar_header-icons{
+display: flex;
+margin-left: 25%;
+}
+
+.Calandar_App{
+display: flex;
+justify-content: center; /* 가운데 정렬 */
+background-color: #f9fafb;
+max-width: 100%;
+}
+
+
+
+.Calandar_page{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 100%;
+  background-color: #f9fafb;
+  flex-direction: column;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.Calandar_page1{
+  position: absolute;
+  margin: 0 auto;
+  top: 7%;
+  bottom: 0%;
+  left: 15%;
+  right: 0%;
+  width: auto;
+  max-width: none;
+  background-color: #FFFFFF;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.Calandar_search-bar {
+  width: 300px;
+  padding: 8px;
+  border-radius: 15px;
+  border: 1px solid #613939;
+  font-family: 'Ownglyph_StudyHard-Rg';
+  margin-left: 30%;
+}
+
+
+.Calandar_header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #000000;
+  height: 10%;
+  gap: 5px; /* 아이템 간 간격 */
+}
+
+
+
+
+h1#login_title {
+  margin-bottom: 50px; /* 로그인 글자와 아래 요소 간격 */
+}
+
+.Calandar_container{
+display: flex;                /* Flexbox 활성화 */
+justify-content: center;      /* 가로 방향(수평) 가운데 정렬 */
+align-items: center;          /* 세로 방향(수직) 가운데 정렬 */
+height: 30vh;                /* 부모 컨테이너의 높이 설정 */
+flex-direction: column;
+}
+
+@font-face {
+font-family: 'Cafe24Ssurround';
+src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+.font{
+  font-family: 'Ownglyph_StudyHard-Rg';
+}
+
+.apply-btn {
+background-color: #83c919;
+padding: 10px 20px;
+color: white;
+border: none;
+border-radius: 5px;
+margin-left: 10px;
+}
+
+.Calandar_profile_button {
+width: 40px;
+height: 40px;
+background-color: #4CAF50; /* 원하는 배경색 */
+color: white;
+font-size: 16px;
+font-weight: bold;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 8px; /* 네모 박스 모서리 둥글게 */
+margin-left: 10px; /* 아이콘과 간격 추가 */
+cursor: pointer;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.no-style-button {
+border: none;
+background: none;
+padding: 0;
+cursor: pointer;
+font-weight: bold;
+}
+
+.no-style-button.active {
+color: #007bff;       /* 텍스트 색상 */
+}
+
+.no-style-button:hover {
+background-color: rgb(233, 229, 229) !important; /* 회색 배경 */
+}
+
+/* ----------------------------------- */
+
+/* 공통 기본 스타일 */
+.TeamCalendar_container.custom-schedule {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* 기본 margin-top은 5vh로 두되, 프로젝트 모드에서 덮어씌움 */
+  
+}
+
+/* 전역 캘린더(/calendar) 전용 */
+.CalendarPage.calendar--global .TeamCalendar_container.custom-schedule {
+  margin-top: 5vh;          /* 메인에서 여백 필요하면 */
+}
+
+/* 프로젝트 캘린더(/project/:id/calendar) 전용 */
+.CalendarPage.calendar--project .TeamCalendar_container.custom-schedule {
+  margin-top: 30vh;            /* 업무 탑바 밑으로 딱 붙이고 싶으면 0 */
+}

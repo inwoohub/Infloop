@@ -1,0 +1,114 @@
+
+
+/* 특정 페이지에서만 달력 크기 조정 */
+.custom-schedule .react-calendar {
+    width: 70vw; /* 달력 크기 조정 */
+    max-width: 100%;
+    background: white;
+    border: 1px solid #4c4848;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 특정 페이지에서만 날짜 셀 크기 조정 */
+  .custom-schedule .react-calendar__tile {
+    width: 40px;
+    height: 12vh;
+    padding: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: left; /* 좌측 정렬 */
+    display: flex;
+    align-items: flex-start; /* 위쪽 정렬 */
+    justify-content: flex-start; /* 좌측 정렬 */
+    border:0.1px solid #ddd;
+    }
+  
+  /* 오늘 날짜 강조 */
+  .custom-schedule .react-calendar__tile--now {
+    border: 4px solid #9183d6;
+    background: white !important;
+    color: black !important;
+    border-radius: 5px;
+  }
+  
+  /* 선택된 날짜 스타일 */
+  .custom-schedule .react-calendar__tile--active {
+    border: 4px solid #007bff;
+    background: white !important;
+    color: white !important;
+    border-radius: 5px;
+  }
+  
+  .event-marker {
+    margin-top: 1.5vh;
+    font-size: 12px;
+    color: black;
+    text-align: center;
+    width: 70%;
+  }
+  
+  /* 선택된 날짜 스타일 (토/일도 원래 색 유지) */
+.custom-schedule .react-calendar__tile--active {
+    border: 4px solid #007bff;
+    background: white !important;
+    color: black !important;
+    border-radius: 5px;
+}
+
+/* 토요일 날짜는 파란색 */
+.saturday {
+    color: black !important;
+  }
+  
+  /* 일요일 날짜는 빨간색 */
+  .sunday {
+    color: red !important;
+  }
+  
+  /* 선택된 날짜가 토/일이면 색 유지 */
+  .react-calendar__tile--active.saturday {
+    color: black !important;
+  }
+  
+  .react-calendar__tile--active.sunday {
+    color: red !important;
+  }
+
+  /* 다음달/이전달 날짜는 색상 초기화 */
+.react-calendar__month-view__days__day--neighboringMonth {
+    color: gray !important; /* 기본 회색 */
+}
+
+/* 다음 달/이전 달 일정 내용도 회색 */
+.react-calendar__month-view__days__day--neighboringMonth .event-marker {
+    color: gray !important; /* 일정 내용 회색 */
+}
+  
+
+.custom-schedule .react-calendar__month-view__weekdays abbr {
+    text-decoration: none !important; /* 밑줄 제거 */
+    border-bottom: none !important; /* 점선 제거 */
+    display: block; /* 레이아웃 안정화 */
+    padding-bottom: 5px; /* 요일 아래 여백 추가 */
+    font-size: 14px; /* 글자 크기 조정 */
+  }
+
+
+  
+  /* 연도 & 월 텍스트 */
+  .custom-schedule .react-calendar__navigation__label {
+    font-size: 14px !important; /* 글자 크기 변경 */
+    font-weight: bold;
+  }
+  
+  .TeamCalendar_container.custom-schedule{
+    background-color: transparent; /* 또는 원하는 다른 색상 */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 5vh; */
+    /* margin-top: 5vh;   이거 조심해야함 2개 묶여있음 (메인페이지-캘린더) , 업무->캘린더 2개 */
+  }
+  

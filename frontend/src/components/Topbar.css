@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Ownglyph_StudyHard-Rg';
+}
+
+.Topbar_header-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 120px; /* 아이템 간 간격 */
+    font-size: 8px;
+    cursor: pointer;
+}
+
+.Topbar_menu-item {
+    cursor: pointer;
+    color: gray; /* 기본 색상 (회색) */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    margin-left: 30px;
+    transition: color 0.3s ease;
+}
+
+.Topbar_homelogo {
+  display: inline-block;
+  margin-left: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.Topbar_header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #FFF;
+    margin-top: -40px;
+    border-bottom: 1px solid gray;
+    height: 5vh;
+    gap: 5px;
+}
+
+.Topbar_menu-item.active {
+    color: black;
+    font-weight: bold;
+}
+
+.Topbar_menu-item:hover {
+    color: darkgray;
+}
+
+
+
+  
+  /* active 클래스가 붙은 탭만 색상 변경 */
+  .Topbar_menu-item.active,
+  .Topbar_menu-item.active h1 {
+    color: #007bff;           /* 예: 파란색 강조 */
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,228 @@
+
+
+/* 특정 페이지에서만 달력 크기 조정 */
+.custom-schedule .react-calendar {
+    width: 70vw; /* 달력 크기 조정 */
+    max-width: 100%;
+    background: white;
+    border: 1px solid #4c4848;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 특정 페이지에서만 날짜 셀 크기 조정 */
+  .custom-schedule .react-calendar__tile {
+    width: 40px;
+    height: 12vh;
+    padding: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: left; /* 좌측 정렬 */
+    display: flex;
+    align-items: flex-start; /* 위쪽 정렬 */
+    justify-content: flex-start; /* 좌측 정렬 */
+    border:0.1px solid #ddd;
+    }
+  
+  /* 오늘 날짜 강조 */
+  .custom-schedule .react-calendar__tile--now {
+    border: 4px solid #9183d6;
+    background: white !important;
+    color: black !important;
+    border-radius: 5px;
+  }
+  
+  /* 선택된 날짜 스타일 */
+  .custom-schedule .react-calendar__tile--active {
+    border: 4px solid #007bff;
+    background: white !important;
+    color: white !important;
+    border-radius: 5px;
+  }
+  
+  .event-marker {
+    margin-top: 1.5vh;
+    font-size: 12px;
+    color: black;
+    text-align: center;
+    width: 70%;
+  }
+  
+  /* 선택된 날짜 스타일 (토/일도 원래 색 유지) */
+.custom-schedule .react-calendar__tile--active {
+    border: 4px solid #007bff;
+    background: white !important;
+    color: black !important;
+    border-radius: 5px;
+}
+
+
+.saturday {
+    color: black !important;
+  }
+  
+  /* 일요일 날짜는 빨간색 */
+  .sunday {
+    color: red !important;
+  }
+  
+  /* 선택된 날짜가 토/일이면 색 유지 */
+  .react-calendar__tile--active.saturday {
+    color: black !important;
+  }
+  
+  .react-calendar__tile--active.sunday {
+    color: red !important;
+  }
+
+  /* 다음달/이전달 날짜는 색상 초기화 */
+.react-calendar__month-view__days__day--neighboringMonth {
+    color: gray !important; /* 기본 회색 */
+}
+
+/* 다음 달/이전 달 일정 내용도 회색 */
+.react-calendar__month-view__days__day--neighboringMonth .event-marker {
+    color: gray !important; /* 일정 내용 회색 */
+}
+  
+
+.custom-schedule .react-calendar__month-view__weekdays abbr {
+    text-decoration: none !important; /* 밑줄 제거 */
+    border-bottom: none !important; /* 점선 제거 */
+    display: block; /* 레이아웃 안정화 */
+    padding-bottom: 5px; /* 요일 아래 여백 추가 */
+    font-size: 14px; /* 글자 크기 조정 */
+  }
+
+
+  
+  /* 연도 & 월 텍스트 */
+  .custom-schedule .react-calendar__navigation__label {
+    font-size: 14px !important; /* 글자 크기 변경 */
+    font-weight: bold;
+  }
+  
+  .MySchedule-Text{
+    text-align: center;
+  }
+  
+  /* ScheduleModal.css 또는 MySchedule.css 파일에 추가 */
+.Invite_close_btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: #333; /* 모달 배경색과 대비되는 색상 선택 */
+    cursor: pointer;
+    z-index: 1001; /* 모달 내용보다 높게 지정 */
+  }
+
+  .MySchedule-Item{
+    align-items: center;
+  }
+  
+  .MySchedule-container {
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 (필요하면 사용) */
+}
+
+  .MySchedule-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .MySchedule-input {
+    margin-top: 1.5vh;
+    width: 51vh; /* 너비를 조정하여 비율 맞춤 */
+    height: 5vh;
+    border: 2px solid rgb(163, 156, 231);
+    border-radius: 8px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .MySchedule-save-button {
+    background-color: #007bff;
+    color: white;
+    width: 3vw;
+    height: 4vh;
+    font-size: 12px;
+    white-space: nowrap;  /* ✅ 줄바꿈 방지 */
+    text-align: center;  /* ✅ 텍스트 가운데 정렬 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border:0.5px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* ✅ 부드러운 전환 효과 */
+  }
+  
+
+
+  .MySchedule-delete-button {
+    background-color: white;
+    color: black;
+    width: 3vw;
+    height: 4vh;
+    font-size: 12px;
+    white-space: nowrap;  /* ✅ 줄바꿈 방지 */
+    text-align: center;  /* ✅ 텍스트 가운데 정렬 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border:0.5px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* ✅ 부드러운 전환 효과 */
+  }
+
+  /* 🔥 마우스를 올렸을 때 색 변경 */
+.MySchedule-save-button:hover {
+  background-color: #0a59ad;  /* ✅ 배경색 변경 */
+  color: white;  /* ✅ 글자색 변경 */
+}
+
+/* 🔥 마우스를 올렸을 때 색 변경 */
+.MySchedule-delete-button:hover {
+  background-color: black;  /* ✅ 배경색 변경 */
+  color: white;  /* ✅ 글자색 변경 */
+}
+
+  .MySchedule-buttons {
+    margin-top: 2vh;
+    margin-left: 0.5vw;
+    gap: 0.5vw; /* 버튼 사이 간격 */
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 (필요하면 사용) */
+    
+  }
+  
+
+  /* 이전/다음 달 셀의 글씨를 회색으로 지정 */
+.gray-text {
+  color: gray;
+}
+
+.react-calendar__tile--now.sunday {
+  color: red !important;
+}
+
+
+
+.schedule-modal-content {
+  position: relative; /* 자식의 absolute 위치 지정 기준 */
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}

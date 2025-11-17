@@ -1,0 +1,10 @@
+/* GanttChart.css */
+.rct-item {
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .rct-horizontal-lines {
+    border-bottom: 1px solid #ddd;
+  }
+  

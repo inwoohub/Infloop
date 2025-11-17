@@ -1,0 +1,34 @@
+.Sidebar {
+  width: 160px;                
+  background: #f8f9fa;
+  padding-top: 80px; 
+  padding-left: 20px; 
+  border-right: 1px solid #ddd;
+  /* 부모 컨테이너의 높이에 맞추기 위해 height를 100%로 설정 */
+  height: 100%;
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+.Sidebar h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: left;
+}
+
+.Sidebar ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0 0 20px 0;
+  text-align: left;
+}
+
+.Sidebar ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  justify-content: flex-start;
+}

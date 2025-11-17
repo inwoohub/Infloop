@@ -1,0 +1,104 @@
+.chat-list {
+    height: 60vh;
+    width: 14vw;
+    
+    
+    padding: 10px;
+    background: white;
+    overflow-y: auto; /* 세로 스크롤 활성화 */
+  }
+  
+  .chat-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .chat-list li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    
+  }
+  
+  .chat-list li:hover {
+    background: #e6923e ;
+    color:white;
+  }
+  
+  .chat-list li.selected {
+    background: #f29c46;
+    font-weight: bold;
+    color:white;
+  }
+  
+  .chatlist-header{
+    flex: 2; /* ✅ 채팅 화면을 더 넓게 설정 */
+    max-width: 70%; /* ✅ 너비 조정 */
+    height: 5vh;
+    margin-top: 2.5vh;
+  }
+
+
+  /* 전체 스크롤바 스타일 */
+.chat-list::-webkit-scrollbar {
+  width: 8px; /* 스크롤바 너비 */
+}
+
+/* 스크롤바 트랙 (배경) */
+.chat-list::-webkit-scrollbar-track {
+  background: #f0f0f0; /* 연한 회색 */
+  border-radius: 10px;
+}
+
+/* 스크롤바 핸들 (움직이는 부분) */
+.chat-list::-webkit-scrollbar-thumb {
+  background: #9183d6; 
+  border-radius: 10px;
+}
+
+/* 스크롤바 핸들 - 호버 시 */
+.chat-list::-webkit-scrollbar-thumb:hover {
+  background: #7867c3; 
+}
+
+.chatlist-text{
+  margin-left: 1vw;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* ─── 탭 버튼 스타일 개선 ───────────────────────────── */
+.chatlist-header {
+  display: flex;
+  gap: 6px;                 /* 버튼 사이 살짝 간격 */
+  padding: 0 8px;
+  border-bottom: 1px solid #dcdfe6;
+  background: #f7f8fa;
+}
+
+/* 기본 탭 버튼 */
+.tab-button {
+  flex: 1;
+  padding: 10px 0;
+  border: none;
+  background: #eef1f7;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #4b5563;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* 마우스 오버 */
+.tab-button:hover {
+  background: #e4e8f0;
+}
+
+/* 선택된 탭 */
+.tab-button.active {
+  background: #ffffff;
+  color: #2563eb;                 /* 파란 포인트 컬러 */
+  border-bottom: 3px solid #2563eb;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.04);
+}

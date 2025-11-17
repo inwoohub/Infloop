@@ -1,0 +1,1023 @@
+/* 전체 컨테이너 */
+.main-container {
+  background-color: #f9fafb;
+  margin-top: 56px;
+  min-height: 100vh;
+}
+
+/* 환영 메시지 섹션 */
+.welcome-section {
+  background-color: white;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1.5rem;
+}
+
+.welcome-content {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.welcome-text {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-weight: 700;
+  color: #111827;
+}
+
+.crown-emoji {
+  font-size: clamp(1.5rem, 2.5vw, 1.875rem);
+  margin-right: 0.5rem;
+}
+
+.welcome-date {
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+  color: #6b7280;
+}
+
+/* 대시보드 컨테이너 */
+.dashboard-container {
+  padding: 1.5rem;
+  width: 100vw;
+}
+
+.dashboard-content {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* 통계 그리드 */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border: 1px solid #f3f4f6;
+}
+
+.stat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+/* 요일 밑줄(점선) 없애기 */
+.react-calendar__month-view__weekdays__weekday abbr {
+  text-decoration: none;
+  cursor: default; /* 필요시 커서 모양도 바꿔줄 수 있습니다 */
+  margin-bottom: 10px;
+}
+
+
+.stat-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-icon.blue-bg {
+  background-color: #dbeafe;
+  color: #2563eb;
+}
+
+.stat-icon.purple-bg {
+  background-color: #e9d5ff;
+  color: #9333ea;
+}
+
+.stat-icon.green-bg {
+  background-color: #d1fae5;
+  color: #10b981;
+}
+
+.stat-icon.red-bg {
+  background-color: #fee2e2;
+  color: #ef4444;
+}
+
+.stat-badge {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+}
+
+.stat-badge.blue {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.stat-badge.purple {
+  background-color: #e9d5ff;
+  color: #7c3aed;
+}
+
+.stat-badge.green {
+  background-color: #d1fae5;
+  color: #059669;
+}
+
+.stat-badge.red {
+  background-color: #fee2e2; /* 연한 빨강 배경 */
+  color: #b91c1c;            /* 진한 빨강 텍스트 */
+}
+
+.stat-badge.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.stat-number {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-weight: 700;
+  color: #111827;
+}
+
+.stat-label {
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+  color: #4b5563;
+}
+
+/* 컨텐츠 그리드 */
+.content-grid {
+  display: grid;
+  grid-template-columns: minmax(350px, 1fr) minmax(400px, 1.2fr) minmax(300px, 0.8fr);
+  gap: 1rem;
+}
+
+.section-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  height: 600pxg;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 9px;
+}
+
+.section-title {
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  font-weight: 600;
+  color: #111827;
+}
+
+.section-title-activity{
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1.5vh;
+}
+
+.section-link {
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+  color: #2563eb;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.section-link:hover {
+  color: #1d4ed8;
+}
+
+/* 프로젝트 섹션 */
+.projects-section {
+  grid-column: span 1;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  height: 525px;
+  overflow-y: auto;
+}
+
+.projects-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.projects-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.projects-list::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.projects-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.project-card {
+  padding: 1rem;
+  border-radius: 8px;
+  border: 2px solid #f3f4f6;
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: white;
+}
+
+.project-card:hover {
+  border-color: #e5e7eb;
+}
+
+.project-card.selected {
+  background-color: #eff6ff;
+  border-color: #93c5fd;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.project-title-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.favorite-star {
+  color: #d1d5db;
+  cursor: pointer;
+  transition: color 0.2s;
+  margin-top: 0.125rem;
+}
+
+.favorite-star:hover {
+  color: #fbbf24;
+}
+
+.favorite-star svg {
+  display: block;
+}
+
+.project-name {
+  font-weight: 500;
+  color: #111827;
+  font-size: clamp(0.75rem, 1.2vw, 0.875rem);
+}
+
+.project-desc {
+  font-size: clamp(0.625rem, 1vw, 0.75rem);
+  color: #6b7280;
+  margin-top: 0.125rem;
+}
+
+.progress-section {
+  margin-top: 0.5rem;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: clamp(0.625rem, 1vw, 0.75rem);
+  margin-bottom: 0.25rem;
+}
+
+.progress-info span:first-child {
+  color: #4b5563;
+}
+
+.progress-value {
+  font-weight: 500;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+  height: 6px;
+}
+
+.progress-fill {
+  height: 6px;
+  border-radius: 9999px;
+  background-color: #3b82f6;
+  transition: width 0.3s;
+}
+
+/* 프로젝트 상세 정보 (인라인) */
+.project-detail-inline {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+  margin-bottom: 0.5rem;
+}
+
+.detail-item span:first-child {
+  color: #4b5563;
+}
+
+.detail-value {
+  font-weight: 500;
+  color: #111827;
+}
+
+.red-text {
+  color: #dc2626;
+}
+
+.detail-button {
+  width: 100%;
+  margin-top: 0.75rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: white;
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.detail-button:hover {
+  background-color: #1d4ed8;
+}
+
+.detail-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 256px;
+  color: #9ca3af;
+}
+
+/* 중앙 섹션 - 캘린더 */
+.center-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.calendar-section {
+  height: fit-content;
+  height: 600px;
+}
+
+/* React Calendar 커스텀 스타일 */
+/* 캘린더 테두리 - 얇은 선 하나만 */
+.calendar-wrapper {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.25rem; /* 패딩도 줄임 */
+  margin-top: 10px;
+}
+
+.react-calendar {
+  width: 100%;
+  background: white;
+  border: none;
+  font-family: inherit;
+}
+
+.react-calendar__navigation {
+  margin-bottom: 0.5rem;
+}
+
+.react-calendar__navigation button {
+  color: #374151;
+  min-width: 40px;
+  background: none;
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+  font-weight: 500;
+}
+
+.react-calendar__navigation button:hover {
+  background-color: #f3f4f6;
+}
+
+.react-calendar__navigation button:disabled {
+  background-color: transparent;
+  color: #9ca3af;
+}
+
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: clamp(0.625rem, 1vw, 0.75rem);
+  color: #6b7280;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  padding: 0.5rem;
+}
+
+.react-calendar__tile {
+  max-width: 100%;
+  padding: 0.75rem 0.5rem;
+  background: none;
+  text-align: center;
+  line-height: 1;
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+  color: #374151;
+  position: relative;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.react-calendar__tile:hover {
+  /* background-color: red; */
+  border-radius: 8px;
+}
+
+.react-calendar__tile--active {
+  color: white;
+  border-radius: 8px;
+}
+
+/* .react-calendar__tile--active:hover {
+  background: #1d4ed8;
+}  */
+
+.react-calendar__tile--now {
+  background: #ff9124;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+/* .react-calendar__tile--now:hover {
+  background: red;
+} */
+
+.react-calendar__tile.neighboring-month {
+  color: #d1d5db;
+}
+
+.react-calendar__tile.sunday {
+  color: #ef4444;
+}
+
+.react-calendar__tile.saturday {
+  color: #3b82f6;
+}
+
+/* 이벤트 마커 */
+.event-markers {
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+}
+
+.event-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+
+.event-dot.personal {
+  background-color: #ef4444;
+}
+
+.event-dot.team {
+  background-color: #3b82f6;
+}
+
+/* 일정 요약 */
+.schedule-summary {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.schedule-day {
+  padding: 0.75rem;
+  background-color: #f9fafb;
+  border-radius: 8px;
+}
+
+.schedule-day-title {
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.schedule-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+.schedule-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.schedule-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.schedule-dot.personal {
+  background-color: #ef4444;
+}
+
+.schedule-dot.team {
+  background-color: #3b82f6;
+}
+
+.schedule-text {
+  font-size: clamp(0.625rem, 1vw, 0.75rem);
+  color: #4b5563;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.no-schedule {
+  font-size: clamp(0.625rem, 1vw, 0.75rem);
+  color: #9ca3af;
+  font-style: italic;
+}
+
+/* 오른쪽 섹션 - 최근 활동 */
+.right-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-section {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-list {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0.rem;
+}
+
+.activity-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.activity-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.activity-list::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.activity-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.no-activity {
+  text-align: center;
+  color: #9ca3af;
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+  padding: 2rem;
+}
+
+/* 활동 로그 아이템 */
+.activity-log-item {
+  padding: 0.75rem;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.2s;
+}
+
+.activity-log-item:hover {
+  background-color: #f3f4f6;
+  border-color: #d1d5db;
+}
+
+.activity-log-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.activity-user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.activity-user-name {
+  font-weight: 600;
+  color: #111827;
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+}
+
+.activity-action-label {
+  font-size: clamp(0.625rem, 0.9vw, 0.75rem);
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  font-weight: 500;
+}
+
+/* 액션 라벨 색상 */
+.action-댓글등록 {
+  background-color: #dbeafe;
+  color: #ffffff;
+}
+
+.action-업무상태변경 {
+  background-color: #fff2be;
+  color: #ffffff;
+}
+
+.action-담당자변경 {
+  background-color: #e9d5ff;
+  color: #ffffff;
+}
+
+.action-업무생성 {
+  background-color: #d1fae5;
+  color: #ffffff;
+}
+
+.action-업무삭제 {
+  background-color: #fee2e2;
+  color: #ffffff;
+}
+
+.action-파일업로드 {
+  background-color: #e0e7ff;
+  color: #ffffff;
+}
+
+.activity-time {
+  font-size: clamp(0.625rem, 0.9vw, 0.75rem);
+  color: #4b5563;
+}
+
+.activity-task-name {
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+  color: #4b5563;
+  margin-bottom: 0.25rem;
+}
+
+.activity-content {
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+  color: #6b7280;
+  line-height: 1.4;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1400px) {
+  .content-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .right-section {
+    grid-column: span 2;
+  }
+  
+  .activity-section {
+    height: 400px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .schedule-summary {
+    grid-template-columns: 1fr;
+  }
+  
+  .activity-section {
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    padding-top: 50px;
+  }
+  
+  .welcome-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .dashboard-container {
+    padding: 1rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 화면 확대/축소 대응 */
+@media (min-width: 1920px) {
+  .dashboard-content {
+    max-width: 1800px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-card {
+    padding: 0.75rem;
+  }
+  
+  .projects-list {
+    max-height: 300px;
+  }
+  
+  .activity-section {
+    height: 400px;
+  }
+}
+
+/* 클릭 가능한 통계 카드 */
+.stat-card.clickable {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.stat-card.clickable:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 모달 스타일 */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.modal-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #6b7280;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.modal-close:hover {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+.modal-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem 1.5rem;
+}
+
+.modal-footer {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+}
+
+.no-tasks {
+  text-align: center;
+  color: #9ca3af;
+  padding: 2rem;
+  font-style: italic;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.task-item {
+  background-color: #f9fafb;
+  border-radius: 8px;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  transition: all 0.2s;
+}
+
+.task-item:hover {
+  background-color: #f3f4f6;
+  border-color: #d1d5db;
+}
+
+.task-info {
+  width: 100%;
+}
+
+.task-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.project-info {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+}
+
+.task-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.status-0 {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+.status-1 {
+  background-color: #dbeafe;
+  color: #2563eb;
+}
+
+.status-2 {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+.status-3 {
+  background-color: #d1fae5;
+  color: #059669;
+}
+
+.due-date {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.d-day {
+  font-weight: 600;
+  color: #dc2626;
+}
+
+.task-count {
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    max-height: 90vh;
+  }
+  
+  .task-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-count-badge {
+  font-size: 20px;
+  color: #000000;      /* 진한 인디고 */
+  font-weight: 700;    /* ✅ 굵게 표시 */
+}
+
+.react-calendar .react-calendar__tile--now:hover{
+  background: #cf7106;
+}
+
+.react-calendar .react-calendar__tile--active:hover {
+  background: #2f6bca;   /* 살짝 하이라이트 */
+  box-shadow: 0 0 0 2px #2563eb55 inset;
+  cursor: pointer;
+}

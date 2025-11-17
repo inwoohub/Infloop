@@ -1,0 +1,139 @@
+.ProjectList_container {
+    background-color: #E8F1FF;
+    border-radius: 10px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .ProjectList_page {
+    width: 50vw;
+    height: 25vh;
+    margin-left: 3vw;
+    background-color: white;
+    border-radius: 10px; /* 모서리를 둥글게 만듦 */
+  }
+  
+  
+  .progress-bar {
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+    width: 30vw;
+  }
+
+  .progress-bar2 {
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+    width: 15vw;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: rgb(163, 156, 231);
+  }
+  
+  .Project_color {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .red { background-color: red; }
+  .yellow { background-color: yellow; }
+  .blue { background-color: blue; }
+  
+  .ProjectList_page ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .ProjectList_text{
+    font-size: 14px;
+    font-weight: bold;
+    color:"black";
+  }
+
+
+  .ProjectListModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .ProjectListModalContent {
+    position: relative; /* 내부 요소들이 모달 콘텐츠 안에서 기본 흐름을 따름 */
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+  }
+
+  .ProjectList-all-btn {
+    background-color: rgb(163, 156, 231);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.6rem;
+    font-weight: bold;
+    margin-left: 6.5vw;
+  }
+  
+  .ProjectList-all-btn:hover {
+    background-color: rgb(133, 127, 189);
+  }
+  
+  
+  .ProjectList_starbutton {
+    width: 20px;
+    height: 20px;
+    background-color: gray; /* 기본 색상 (회색) */
+    clip-path: polygon(
+        50% 8%, 62% 32%, 88% 35%, 68% 50%, 
+        74% 78%, 50% 65%, 26% 78%, 32% 50%, 
+        12% 35%, 38% 32%
+    ); /* 별 모양 */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+/* ⭐ 클릭 시 노란색으로 변경 */
+.ProjectList_starbutton.starred {
+  background-color: #FFD700; /* 클릭 후 노란색 */
+}
+
+.ProjectList_starbutton:hover {
+  background-color: rgb(105, 96, 193); /* 클릭 후 노란색 */
+}
+
+.extra-projects {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.extra-projects.expanded {
+  max-height: 1000px; /* 목록의 실제 높이에 맞게 충분히 큰 값 */
+}
+
+.ProjectList_text:hover {
+  color: rgb(163, 156, 231); /* 원하는 색상 코드로 변경 */
+}

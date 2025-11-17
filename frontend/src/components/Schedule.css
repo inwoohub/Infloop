@@ -1,0 +1,198 @@
+.Schedule_container {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 3vw;
+    width: 50vw;
+  }
+
+  /* 특정 페이지에서만 달력 크기 조정 */
+.custom-mainschedule .react-calendar {
+  width: 50vw; /* 달력 크기 조정 */
+  max-width: 100%;
+  background: white;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  height: 45vh;
+}
+
+.custom-mainschedule .react-calendar__tile {
+  width: 40px;
+  height: 6vh;
+  padding: 5px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: left; /* 좌측 정렬 */
+  display: flex;
+  align-items: flex-start; /* 위쪽 정렬 */
+  justify-content: flex-start; /* 좌측 정렬 */
+  border:0.1px solid #ddd;
+  }
+
+    /* 오늘 날짜 강조 */
+    .custom-mainschedule .react-calendar__tile--now {
+      border: 4px solid #9183d6;
+      background: white !important;
+      color: black !important;
+      border-radius: 5px;
+    }
+    
+    /* 선택된 날짜 스타일 */
+    .custom-mainschedule .react-calendar__tile--active {
+      border: 4px solid #007bff;
+      background: white !important;
+      color: white !important;
+      border-radius: 5px;
+    }
+
+    .custom-mainschedule .react-calendar__month-view__weekdays abbr {
+      text-decoration: none !important; /* 밑줄 제거 */
+      border-bottom: none !important; /* 점선 제거 */
+      display: block; /* 레이아웃 안정화 */
+      padding-bottom: 1px; /* 요일 아래 여백 추가 */
+      font-size: 12px; /* 글자 크기 조정 */
+    }
+
+     /* 연도 & 월 텍스트 */
+  .custom-mainschedule .react-calendar__navigation__label {
+    font-size: 14px !important; /* 글자 크기 변경 */
+    font-weight: bold;
+  }
+  
+  .react-calendar {
+    width: 100%;  /* 부모 컨테이너에 맞게 자동 조절 */
+    height: auto;
+    max-width: 100%;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* 날짜 타일 크기도 컨테이너 크기에 맞춰 조정 */
+  .react-calendar__tile {
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .react-calendar__tile--active {
+    background-color: #4e9eff;
+    color: white;
+  }
+  
+  .dot.personal  {
+    height: 8px;
+    width: 8px;
+    background-color: rgb(163, 156, 231); /* 원하는 색상으로 변경 가능 */
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot.team{
+    height: 8px;
+    width: 8px;
+    background-color: rgb(238, 54, 54); /* 원하는 색상으로 변경 가능 */
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+
+  .schedule-container {
+    display: flex;
+    flex-direction: row;  /* 가로 정렬 */
+    flex-wrap: nowrap;    /* 줄바꿈 없이 한 줄에 표시 */
+    white-space: nowrap;  /* 인라인 요소의 공백도 제거 */
+    overflow-x: auto;     /* 필요한 경우 넘치는 부분은 스크롤 */
+    align-items: center;  /* 수직 중앙 정렬 */
+  }
+  
+  
+  .schedule-group {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* 요소 사이의 간격 조절 */
+    margin-top: 1vh;
+  }
+  
+  .schedule-group-header {
+    margin: 0;       /* 기본 여백 제거 */
+    display: inline; /* 혹은 inline-block */
+  }
+  
+  .schedule-item {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .schedule-teamitem {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  
+ 
+  .schedule-dot.team {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(238, 54, 54); /* 원하는 색상으로 변경 */
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+
+  .schedule-dot.personal {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(163, 156, 231); /* 원하는 색상으로 변경 */
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+
+
+  .schedule-title {
+    display: inline-block;
+  }
+  
+
+  .schedule-modal-content {
+    position: relative; /* 자식의 absolute 위치 지정 기준 */
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .Schedule_button {
+    background-color: #007bff;
+    color: white;
+    width: 3vw;
+    height: 4vh;
+    font-size: 12px;
+    white-space: nowrap;  /* ✅ 줄바꿈 방지 */
+    text-align: center;  /* ✅ 텍스트 가운데 정렬 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border:0.5px solid black;
+    cursor: pointer;
+    margin-top: 1vh;
+    transition: background-color 0.3s, color 0.3s; /* ✅ 부드러운 전환 효과 */
+  }
+  
+
+  /* 🔥 마우스를 올렸을 때 색 변경 */
+.Schedule_button:hover {
+  background-color: #0a59ad;  /* ✅ 배경색 변경 */
+  color: white;  /* ✅ 글자색 변경 */
+}

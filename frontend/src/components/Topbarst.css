@@ -1,0 +1,63 @@
+.Topbarst_header {
+    display: flex;
+    padding: 25px;
+    margin-top: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #FFF;
+    border-bottom: 1px solid #FFFFFF;
+    height: 150px;
+    gap: 3px; /* 아이템 간 간격 */
+    font-size: 10px;
+}
+
+.Topbarst_profile_button {
+    width: 35px;
+    height: 35px;
+    background-color: #FBBC04; /* 원하는 배경색 */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px; /* 네모 박스 모서리 둥글게 */
+    margin-left: 20px; /* 아이콘과 간격 추가 */
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 별모양 */
+/* 기본 회색 별 버튼 */
+.Topbarst_profile_starbutton {
+    margin-left: 30px;
+    width: 25px;
+    height: 25px;
+    background-color: gray; /* 기본 색상 (회색) */
+    clip-path: polygon(
+        50% 8%, 62% 32%, 88% 35%, 68% 50%, 
+        74% 78%, 50% 65%, 26% 78%, 32% 50%, 
+        12% 35%, 38% 32%
+    ); /* 별 모양 */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* 클릭 시 노란색으로 변경 */
+.Topbarst_profile_starbutton.starred {
+    background-color: #FFD700; /* 클릭 후 노란색 */
+}
+
+.Topbarst_profile_starbutton:hover{
+    background-color: rgb(105, 96, 193)
+}
+
+.Topbarst_listlogo{
+  margin-left: 30px;
+  display: inline-block;
+  margin-top: 0px;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}

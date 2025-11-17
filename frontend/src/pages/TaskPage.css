@@ -1,0 +1,446 @@
+/* 전체 래퍼 */
+.TaskPage_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    overflow: auto;
+    background-color: #f9fafb;
+}
+
+/* Topbar 헤더 영역 */
+.TaskPage_Topbarst_header {
+    z-index: 999;
+    width: 98vw;
+}
+
+/* 컨트롤 바 */
+.TaskPage_controlRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #E5E5E5;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.ControlLeft {
+    display: flex;
+    align-items: center;
+}
+
+.TaskNameInput {
+    width: 350px;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    background-color: #f9fafb;
+}
+
+.TaskNameInput:focus {
+    outline: none;
+    border-color: #3b82f6;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.ControlRight {
+    display: flex;
+    align-items: center;
+    gap: 3rem; /* 간격 0.75rem로 유지 */
+}
+
+/* [수정됨] .ZoomAndNew button과 모양, 스타일 모두 통일 */
+.TaskPage_FilterButton {
+    padding: 0.75rem 1rem; /* 1.25rem -> 1rem 으로 수정 (모양 통일) */
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 12px;
+    background: #3b82f6;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px #3b82f6;
+}
+
+/* [수정됨] .ZoomAndNew button:hover와 통일 */
+.TaskPage_FilterButton:hover {
+    transform: translateY(-2px);
+    color: white;
+    box-shadow: 0 6px 20px #3b82f6;;
+    background: #3b82f6;
+}
+
+/* 명시도 문제 해결됨 */
+.ZoomAndNew .AddTaskButton {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px #3b82f6;
+}
+
+.ZoomAndNew .AddTaskButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px #3b82f6;
+    background: #3b82f6;
+}
+
+
+.ZoomAndNew {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* 줌(-, +) 버튼 스타일 */
+.ZoomAndNew button {
+    padding: 0.75rem 1rem;
+    border: none;
+    color: black;
+    cursor: pointer;
+    border-radius: 12px;
+    background: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px #acacac;
+}
+
+.ZoomAndNew button:hover {
+    transform: translateY(-2px);
+    color: white;
+    box-shadow: 0 6px 20px gray;
+    background: gray;
+}
+
+/* 명시도 문제 해결됨 */
+.ZoomAndNew .ParentSelect {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px #3b82f6;
+}
+
+.ZoomAndNew .ParentSelect:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px #3b82f6;
+}
+
+/* 필터 패널 */
+.FilterPanel {
+    background: white;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 0 1.5rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.FilterGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.FilterGroup label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.FilterGroup input[type="radio"],
+.FilterGroup input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    accent-color: #3b82f6;
+}
+
+/* 간트차트 컨테이너 */
+.GanttContainer {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    margin: 1rem 1.5rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e5e7eb;
+}
+
+/* 왼쪽 고정 테이블 */
+.LeftTable {
+    flex: 0 0 auto;
+    border-collapse: collapse;
+    background: white;
+    height: 70px;
+}
+
+.LeftTable th,
+.LeftTable td {
+    padding: 0.75rem;
+    border-right: 1px solid #e5e7eb;
+    border-bottom: 1px solid #f3f4f6;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.LeftTable th {
+    background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+    font-weight: 600;
+    color: #374151;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.LeftTable .col-task {
+    width: 250px;
+    height: 70px;
+}
+
+.LeftTable .col-assignee {
+    width: 100px;
+    text-align: center;
+}
+
+.LeftTable .col-status {
+    width: 100px;
+    text-align: center;
+}
+
+/* 오른쪽 스크롤 테이블 */
+.RightTableWrapper {
+    flex: 1 1 auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    cursor: grab;
+}
+
+.RightTableWrapper.dragging {
+    cursor: grabbing;
+    user-select: none;
+}
+
+.RightTable {
+    border-collapse: collapse;
+    width: max-content;
+    background: white;
+}
+
+.RightTable th,
+.RightTable td {
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+    border-right: 1px solid #f3f4f6;
+    border-bottom: 1px solid #f3f4f6;
+    height: 70px;
+}
+
+.RightTable th {
+    background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+    font-weight: 600;
+    color: #374151;
+    font-size: 0.75rem;
+    border-bottom: 2px solid #e5e7eb;
+    height: 35px;
+    vertical-align: middle;
+}
+
+.RightTable thead tr:first-child {
+    height: 35px;
+}
+
+.RightTable thead tr:last-child {
+    height: 35px;
+}
+
+.RightTable tbody tr {
+    height: 49px;
+}
+
+/* 주차 헤더 */
+.week_tr th.week-header-cell {
+    height: 70px !important;
+    line-height: 70px !important;
+    padding: 0 !important;
+    background: linear-gradient(135deg, #eff6ff, #dbeafe);
+    color: #1e40af;
+    font-weight: 600;
+    border-right: 1px solid #3b82f6;
+}
+
+/* 트리 구조 */
+.TreeItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.TreeItem:hover {
+    color: #2563eb;
+}
+
+.ToggleBtn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.ToggleBtn:hover {
+    background-color: #f3f4f6;
+    color: #2563eb;
+}
+
+/* 상태 배지 */
+.StatusBadge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 0.75rem;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.StatusBadge.status-요청 {
+    background: linear-gradient(135deg, #3b82f6, #60a5fa);
+}
+
+.StatusBadge.status-진행 {
+    background: linear-gradient(135deg, #10b981, #34d399);
+}
+
+.StatusBadge.status-피드백 {
+    background: linear-gradient(135deg, #f59e0b, #fbbf24);
+}
+
+.StatusBadge.status-완료 {
+    background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+}
+
+.StatusBadge.status-보류 {
+    background: linear-gradient(135deg, #6b7280, #9ca3af);
+}
+
+/* 간트 차트 바 */
+.gantt-cell {
+    position: relative;
+    background: #f9fafb;
+    height: 140px;
+}
+
+.gantt-bar {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* 상세 패널 위치 */
+.TaskPage_rightSide {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    width: 500px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e5e7eb;
+    z-index: 999;
+    overflow: hidden;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto; 
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1024px) {
+    .TaskPage_controlRow {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: stretch;
+    }
+
+    .ControlLeft,
+    .ControlRight {
+        justify-content: center;
+    }
+
+    .TaskNameInput {
+        width: 100%;
+    }
+
+    .TaskPage_rightSide {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 100%;
+        margin: 1rem;
+        max-height: 400px;
+    }
+
+    .GanttContainer {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .GanttContainer {
+        margin: 0.5rem;
+    }
+
+    .LeftTable .col-task {
+        width: 200px;
+    }
+
+    .LeftTable .col-assignee,
+    .LeftTable .col-status {
+        width: 80px;
+    }
+
+    .ZoomAndNew {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+
+/* ParentSelect 안의 모든 option 텍스트 */
+.ParentSelect option {
+    color: black;
+}
+
+/* placeholder option 별도 스타일링 */
+.ParentSelect option[value=""] {
+    color: #999;
+}

@@ -1,0 +1,539 @@
+/* 전체 컨테이너 */
+.TaskDetailPanel_container {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  background: white;
+  overflow-y: auto;
+  border-radius: 16px;
+}
+
+.TaskDetailPanel_container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.TaskDetailPanel_container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.TaskDetailPanel_container::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+/* 닫기 버튼 */
+.TaskDetailPanel_closeBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: linear-gradient(135deg, #ef4444, #f87171);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2);
+}
+
+.TaskDetailPanel_closeBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.3);
+}
+
+/* 상단 헤더 영역 */
+.TDP_header {
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.TDP_projectLine {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.75rem;
+}
+
+.TDP_projectName {
+  color: #2563eb;
+}
+
+.TDP_separator {
+  color: #9ca3af;
+}
+
+.TDP_parentTaskName {
+  color: #6b7280;
+}
+
+.TDP_infoLine {
+  display: flex;
+  gap: 1rem;
+}
+
+.TDP_assigneeDate p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #6b7280;
+  background-color: #f3f4f6;
+  padding: 0.375rem 0.75rem;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+/* 하위 업무 및 버튼 */
+.TDP_subTaskLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 1rem 1.5rem; /* 좌우 패딩 늘림 */
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  gap: 1rem; /* 요소 간 간격 추가 */
+}
+
+.TDP_subTaskTitle {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #111827;
+  margin: 0;
+  flex: 1; /* 남은 공간 모두 차지 */
+  text-align: left; /* 왼쪽 정렬 */
+  white-space: nowrap; /* 한 줄로 표시 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.TDP_subTaskTitleEdit {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid #3b82f6;
+  border-radius: 8px;
+  background: white;
+  min-width: 200px;
+  outline: none;
+  flex: 1; /* 남은 공간 모두 차지 */
+}
+
+/* 버튼 그룹을 오른쪽에 고정 */
+.TDP_buttonGroup {
+  display: flex;
+  gap: 0.75rem; /* 버튼 간 간격 늘림 */
+  flex-shrink: 0; /* 축소되지 않도록 */
+}
+
+.TDP_subTaskEditBtn,
+.TDP_subTaskSaveBtn,
+.TDP_subTaskCancelBtn,
+.TDP_aiGuideBtn {
+  background: linear-gradient(135deg, #10b981, #34d399);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.2);
+  white-space: nowrap; /* 버튼 텍스트 한 줄로 */
+}
+
+.TDP_subTaskSaveBtn {
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
+}
+
+.TDP_subTaskCancelBtn {
+  background: linear-gradient(135deg, #6b7280, #9ca3af);
+  box-shadow: 0 2px 8px rgba(107, 114, 128, 0.2);
+}
+
+.TDP_aiGuideBtn {
+  background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+  box-shadow: 0 2px 8px rgba(139, 92, 246, 0.2);
+}
+
+.TDP_subTaskEditBtn:hover,
+.TDP_subTaskSaveBtn:hover,
+.TDP_subTaskCancelBtn:hover,
+.TDP_aiGuideBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 상태, 담당자, 날짜 섹션 */
+.TDP_statusLine {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  flex-wrap: wrap;
+}
+
+.TDP_statusSelect label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.TDP_statusSelect select {
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.TDP_statusSelect select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.TDP_assigneeAdd {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.TDP_assigneeAdd select {
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.TDP_assigneeAdd select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.TDP_assigneeAdd button {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
+}
+
+.TDP_assigneeAdd button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.TDP_dates {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.TDP_dates label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.TDP_dates input {
+  padding: 0.5rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.TDP_dates input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* 탭 버튼 */
+.TDP_tabs {
+  margin: 1.5rem 0 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.TDP_tabs button {
+  background: #f3f4f6;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6b7280;
+  transition: all 0.3s ease;
+}
+
+.TDP_tabs button.active {
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  color: white;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+}
+
+.TDP_tabs button:hover:not(.active) {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+/* 탭 컨텐츠 영역 */
+.TDP_tabContent {
+  background: #f9fafb;
+  min-height: 150px;
+  max-height: 200px;
+  border-radius: 12px;
+  padding: 1rem;
+  font-size: 0.875rem;
+  border: 1px solid #e5e7eb;
+}
+
+/* 댓글 영역 */
+.TDP_commentList {
+  max-height: 150px;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.TDP_commentList::-webkit-scrollbar {
+  width: 4px;
+}
+
+.TDP_commentList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 2px;
+}
+
+.TDP_commentList::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 2px;
+}
+
+.TDP_commentItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background: white;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+.TDP_commentAuthor {
+  min-width: 80px;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  color: #2563eb;
+  flex-shrink: 0;
+}
+
+.TDP_commentContent {
+  font-size: 0.875rem;
+  color: #374151;
+  flex: 1;
+  line-height: 1.4;
+}
+
+.TDP_commentDate {
+  min-width: 80px;
+  font-size: 0.75rem;
+  color: #9ca3af;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+/* 가이드 영역 */
+.TDP_guideArea {
+  color: #6b7280;
+  font-style: italic;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* 입력 영역 */
+.TDP_inputRow {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.TDP_commentForm {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.TDP_commentForm input[type="text"] {
+  flex: 1;
+  padding: 0.75rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+}
+
+.TDP_commentForm input[type="text"]:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.TDP_commentForm button {
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
+}
+
+.TDP_commentForm button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.TDP_fileForm {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.TDP_fileLabel {
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.TDP_fileLabel:hover {
+  background: linear-gradient(135deg, #e5e7eb, #d1d5db);
+  border-color: #9ca3af;
+}
+
+.TDP_fileLabel input[type="file"] {
+  display: none;
+}
+
+.TDP_selectedFile {
+  font-size: 0.8125rem;
+  color: #6b7280;
+  background: #eff6ff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  margin: 0;
+}
+
+.TDP_fileForm button {
+  background: linear-gradient(135deg, #10b981, #34d399);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.2);
+}
+
+.TDP_fileForm button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+/* 삭제 버튼 */
+.TDP_deleteRow {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.TDP_deleteBtn {
+  background: linear-gradient(135deg, #ef4444, #f87171);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.2);
+}
+
+.TDP_deleteBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .TaskDetailPanel_container {
+    padding: 1rem;
+  }
+
+  .TDP_statusLine {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .TDP_dates {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .TDP_commentForm,
+  .TDP_fileForm {
+    flex-direction: column;
+  }
+
+  .TDP_subTaskLine {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+}
