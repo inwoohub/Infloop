@@ -41,7 +41,7 @@
 | <img width="163" height="166" alt="Image" src="https://github.com/user-attachments/assets/938038d8-e51c-4f22-a6dc-7626639c8fa7" /> | <img width="163" height="166" alt="Image" src="https://github.com/user-attachments/assets/801f31c3-d064-4d71-a1d1-a3dc8337ea22" /> | <img width="163" height="166" alt="Image" src="https://github.com/user-attachments/assets/d71a4389-1590-47c1-8ec0-2ba998e0b89a" /> |
 | [Github](https://github.com/gazxxni) | [Github](https://github.com/gwoninduk) | [Github](https://github.com/inwoohub) |
 | BE & FE | BE & FE | BE & FE |
-| 업무 생성 및 배정,<br>파일 관리, DB관리 | 회의록, 보고서,<br>로그, 팀매칭, 알림 | 세션 관리,<br>인증&인가,<br>프로필 수정,<br>채팅, 팀매칭, 캘린더 |
+| 업무 생성 및 배정,<br>파일 및 DB 관리 | 회의록, 보고서,<br>로그, 팀매칭, 알림 | 세션 관리,<br>인증&인가,<br>프로필 수정,<br>채팅, 팀매칭, 캘린더 |
 
 <br>
 
