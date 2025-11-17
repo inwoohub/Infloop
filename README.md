@@ -34,6 +34,7 @@
 > - 사용자 편의성 증대
 > - 팀워크와 소통 강화
 > - 개인 맞춤형 프로젝트 경험
+<br>
 
 ## 2. 💁🏻‍♂️ 팀원 소개
 
@@ -44,7 +45,7 @@
 | BE & FE | BE & FE | BE & FE |
 | 업무 생성 및 배정,<br>파일 관리 | 회의록, 보고서,<br>로그, 팀매칭, 알림 | 세션 관리,<br>인증&인가,<br>프로필 수정,<br>채팅, 팀매칭, 캘린더 |
 
-
+<br>
 
 ## 3.  ⚒️  기술 스택
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white"> <img src="https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=whilte"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white"> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white">  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white"> <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white"> <img src="https://img.shields.io/badge/Amazon%20S3-569A31?style=for-the-badge&logo=Amazon%20S3&logoColor=white"> <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white">
@@ -55,13 +56,12 @@
 
 ### 4.1 전체 구조
 <img alt="Image" width="1280" height="720" src="https://private-user-images.githubusercontent.com/169428018/515008598-a2a610b0-2096-4628-ba57-26d39c7ac45e.PNG?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjMzNTk0MjgsIm5iZiI6MTc2MzM1OTEyOCwicGF0aCI6Ii8xNjk0MjgwMTgvNTE1MDA4NTk4LWEyYTYxMGIwLTIwOTYtNDYyOC1iYTU3LTI2ZDM5YzdhYzQ1ZS5QTkc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExN1QwNTU4NDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00Nzk5ZjJmMDEyNzc0NWE5ZjYyYTE2ZmY0ZDEyM2M3YzMzYmVkNTU4YjM2NzRlYjAzY2EwZTViMGIwYTk2OWExJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Zo8Goj2w-FLQCrcQv2Zg_yZcq6_SXP7HfAiUv3W0jtg">
-<br>
 
 ### 4.2 데이터베이스
  <img alt="Image" width="1400" height="1400"
 src="https://private-user-images.githubusercontent.com/169428018/515008589-7790a366-9432-40eb-bef1-01a701bfdcee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjMzNTk0MjgsIm5iZiI6MTc2MzM1OTEyOCwicGF0aCI6Ii8xNjk0MjgwMTgvNTE1MDA4NTg5LTc3OTBhMzY2LTk0MzItNDBlYi1iZWYxLTAxYTcwMWJmZGNlZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExN1QwNTU4NDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mODhlODdjZjBkOTkzN2EwYWI3ZmNhNWYwYjk5MGRkYWMwYzNhOWE4M2I3NjRkN2I5ZDgxOTYwMDY0ZjJiZDE2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.2dxAtn8R42ifs92UcgQfRa4cjNmfqG95E788gkfU0r0">
 <br>
-
+<br>
 
 ## 5. 📁 프로젝트 구조 
 
@@ -93,7 +93,7 @@ src="https://private-user-images.githubusercontent.com/169428018/515008589-7790a
 
 
 
-
+<br>
 
 ## 6.  🖥️ 화면 구성
 
@@ -149,6 +149,8 @@ src="https://private-user-images.githubusercontent.com/169428018/515008589-7790a
 > * 업무/일정이 달력 위에 표시<br>
 > * 마감일/회의 일정 한눈에 확인<br>
 
+<br>
+
 ## 7. 📌 주요 기능
 > 온라인 팀 매칭
 > * 과목별 팀 구하기 게시판
@@ -197,9 +199,6 @@ src="https://private-user-images.githubusercontent.com/169428018/515008589-7790a
 
 > 로그 검색/필터링
 > * 프로젝트 활동 기반 자동 보고서 생성 및 Word 다운로드
-
-
-
 
 
 # Team. Infloop
