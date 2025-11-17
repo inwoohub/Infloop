@@ -61,11 +61,13 @@
 ## 4. 🌐 아키텍처 & 데이터베이스
 
 ### 4.1 아키텍처
-<img alt="Image" width="1280" height="720" src="https://private-user-images.githubusercontent.com/169428018/515008598-a2a610b0-2096-4628-ba57-26d39c7ac45e.PNG?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjMzNTk0MjgsIm5iZiI6MTc2MzM1OTEyOCwicGF0aCI6Ii8xNjk0MjgwMTgvNTE1MDA4NTk4LWEyYTYxMGIwLTIwOTYtNDYyOC1iYTU3LTI2ZDM5YzdhYzQ1ZS5QTkc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExN1QwNTU4NDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00Nzk5ZjJmMDEyNzc0NWE5ZjYyYTE2ZmY0ZDEyM2M3YzMzYmVkNTU4YjM2NzRlYjAzY2EwZTViMGIwYTk2OWExJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Zo8Goj2w-FLQCrcQv2Zg_yZcq6_SXP7HfAiUv3W0jtg">
+<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/b26e43b5-f08d-41d2-a020-67f0e496cc83" />
+<br>
+
+
 
 ### 4.2 데이터베이스
- <img alt="Image" width="1400" height="1400"
-src="https://private-user-images.githubusercontent.com/169428018/515008589-7790a366-9432-40eb-bef1-01a701bfdcee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjMzNTk0MjgsIm5iZiI6MTc2MzM1OTEyOCwicGF0aCI6Ii8xNjk0MjgwMTgvNTE1MDA4NTg5LTc3OTBhMzY2LTk0MzItNDBlYi1iZWYxLTAxYTcwMWJmZGNlZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExN1QwNTU4NDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mODhlODdjZjBkOTkzN2EwYWI3ZmNhNWYwYjk5MGRkYWMwYzNhOWE4M2I3NjRkN2I5ZDgxOTYwMDY0ZjJiZDE2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.2dxAtn8R42ifs92UcgQfRa4cjNmfqG95E788gkfU0r0">
+<img width="1250" height="1250" alt="Image" src="https://github.com/user-attachments/assets/e2a48ea0-023e-4231-a148-17dc882d8a6e" />
 <br>
 <br>
 
@@ -104,16 +106,19 @@ src="https://private-user-images.githubusercontent.com/169428018/515008589-7790a
 ## 6.  🖥️ 화면 구성
 
 ### 로그인 화면
-> <img alt="Image" width="1468" height="743" src="https://private-user-images.githubusercontent.com/169428018/515008586-b3f15eeb-9a53-4ba6-b8a9-1c294060753c.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjMzNTk0MjgsIm5iZiI6MTc2MzM1OTEyOCwicGF0aCI6Ii8xNjk0MjgwMTgvNTE1MDA4NTg2LWIzZjE1ZWViLTlhNTMtNGJhNi1iOGE5LTFjMjk0MDYwNzUzYy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExN1QwNTU4NDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hZjlhNzkyNWVkNGM0NzQxN2Q5MGI4ZTI3MDhmMTRhMzYyMjRjN2YwZDhhOTYwYzNiZWRkYzc4M2JiOWQ4YjM1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.KHbBTzapXkgf5zyBOqwnh6ivlMljL6j6gasyfAaAB7o"> <br>
+> <img width="1468" height="743" alt="Image" src="https://github.com/user-attachments/assets/7edb5091-516c-48ef-ad56-a8fb40a560b8" />
+<br>
 
 
 ### 메인 화면
-> <img alt="Image" width="1468" height="743" src="https://private-user-images.githubusercontent.com/169428018/515008606-4703a59e-8dd9-4af5-acc0-232572e03834.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjMzNTk0MjgsIm5iZiI6MTc2MzM1OTEyOCwicGF0aCI6Ii8xNjk0MjgwMTgvNTE1MDA4NjA2LTQ3MDNhNTllLThkZDktNGFmNS1hY2MwLTIzMjU3MmUwMzgzNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExN1QwNTU4NDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hOTEyZmNjNGMzYmZlNGI3NmE2MmFmNDgzMTcyODhiOTNjZmYxYTUzODE4ZTBjMjJlZDg1MzI0ZWMwYTRiYWU1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.KLlng5d5BZz9S8CdkO_cnxMRVqeGsmhnGVrkveRrlwM"><br>
+> <img width="1468" height="743" alt="Image" src="https://github.com/user-attachments/assets/7ae594f9-04a0-4491-aa52-87876d7ceb21" />
+<br>
 > * 진행 중인 프로젝트 리스트 및 진척도 <br>
 > * 내 일정, 내 업무, 알림, 채팅 진입 등 대시보드 역할 <br>
 
 ### 팀 매칭 화면
-> <img alt="Image" width="1468" height="743" src="https://private-user-images.githubusercontent.com/169428018/515008604-4078696f-4df7-40a8-9507-1ab9820a7fbc.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjMzNTk0MjgsIm5iZiI6MTc2MzM1OTEyOCwicGF0aCI6Ii8xNjk0MjgwMTgvNTE1MDA4NjA0LTQwNzg2OTZmLTRkZjctNDBhOC05NTA3LTFhYjk4MjBhN2ZiYy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExN1QwNTU4NDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kODMwOGM1NWVjY2RlZGNjNzEyYWE4MzU1OGI1ZjU2MWM5MWY5ZTc5ZDUwMzgyNzE1ODZkYzdkZTM5M2ViOTdiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.QnLJ3VzQ8I4QoWJc-bW0E-w7RJZEJNsWlV9YuPnKGac"><br>
+> <img width="1468" height="743" alt="Image" src="https://github.com/user-attachments/assets/6a4204c9-50bd-4256-82c5-96f57dba9bbf" />
+<br>
 > * 과목별 팀 구하기 게시판<br>
 > * 팀 모집 글 작성 및 참여 의사 표시<br>
 
@@ -126,12 +131,14 @@ src="https://private-user-images.githubusercontent.com/169428018/515008589-7790a
 > * 프로젝트 전체 진행 흐름 미리 확인<br>
 
 ### 업무 목록
-> <img alt="Image" width="1468" height="743" src="https://private-user-images.githubusercontent.com/169428018/515008601-ab98ff72-10c8-45c1-90fe-511203f2f71f.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjMzNTk0MjgsIm5iZiI6MTc2MzM1OTEyOCwicGF0aCI6Ii8xNjk0MjgwMTgvNTE1MDA4NjAxLWFiOThmZjcyLTEwYzgtNDVjMS05MGZlLTUxMTIwM2YyZjcxZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExN1QwNTU4NDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00YjU1NGE5OTA0Y2RkNjA4ODQ4NDRjZGQ5OTk2Zjk0MDE4ODgwZmM0MTYyZDhlMzYwYjY5MjhmNGExMGUzZWM1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.HzOr3W4SI1qCeUNHMBh7oT1K2Y5Idd1694dBn8c_xOg"><br>
+> <img width="1468" height="743" alt="Image" src="https://github.com/user-attachments/assets/c7c481d5-fec0-4841-a5b3-6a176928cbdc" />
+<br>
 > * 업무명, 담당자, 상태, 시작일, 마감일 목록<br>
 > * 필터/정렬을 통한 업무 관리<br>
 
 ### 업무 상세 화면
-> <img alt="Image" width="1468" height="743" src="https://private-user-images.githubusercontent.com/169428018/515008597-dfaf1525-6c73-473c-af5f-feba0e43a836.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjMzNTk0MjgsIm5iZiI6MTc2MzM1OTEyOCwicGF0aCI6Ii8xNjk0MjgwMTgvNTE1MDA4NTk3LWRmYWYxNTI1LTZjNzMtNDczYy1hZjVmLWZlYmEwZTQzYTgzNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExN1QwNTU4NDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02NGZiNGFhYmEwZGIyMjA3ZjlkZWMzNGNlZGZhMmFiZTEwMWYxYWVlMzU4MWJmOTAwMGZkNTY1NDU3YTM4ZmZmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.L0JM0_8jjAQbSGgzR6FR0cJLz5TSnJzBdo6Peh4Xf3o"> <br>
+> <img width="1468" height="743" alt="Image" src="https://github.com/user-attachments/assets/66017e58-1068-4b6b-8d77-d7074b7d89a1" />
+<br>
 > * 업무 상태/담당자 변경<br>
 > * 댓글 작성 및 파일 첨부<br>
 > * 진행 상황 기록<br>
@@ -142,16 +149,19 @@ src="https://private-user-images.githubusercontent.com/169428018/515008589-7790a
 > * 저장된 회의록 목록 확인 및 열람<br>
 
 ### 보고서 작성 화면
-> <img alt="Image" width="1468" height="743" src="https://private-user-images.githubusercontent.com/169428018/515008607-461f8a54-6d13-4609-93e9-bd480f264263.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjMzNTk0MjgsIm5iZiI6MTc2MzM1OTEyOCwicGF0aCI6Ii8xNjk0MjgwMTgvNTE1MDA4NjA3LTQ2MWY4YTU0LTZkMTMtNDYwOS05M2U5LWJkNDgwZjI2NDI2My5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExN1QwNTU4NDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jZGZmZWYxNjk4YTkzODNlMzE4NjFmODgwYjkxYjc5YjIzY2E3NzU3NTQ4NDQ2YjM4MmViYjU4MzcwNDMyZWNhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.A9ViET-iusEXOQPwhGTAoTvuJL0jzDKxY6R-tAJ1uzY"> <br>
+> <img width="1468" height="743" alt="Image" src="https://github.com/user-attachments/assets/33f68f3d-4bc2-48ef-9d23-73dc35c69f8e" />
+<br>
 > * 중간 / 최종 보고서 작성 기능<br>
 
 ### 채팅 화면
->  <img alt="Image" width="1468" height="743" src="https://private-user-images.githubusercontent.com/169428018/515008590-0a60e0cb-aab1-4018-b354-afa8d4e70b28.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjMzNTk0MjgsIm5iZiI6MTc2MzM1OTEyOCwicGF0aCI6Ii8xNjk0MjgwMTgvNTE1MDA4NTkwLTBhNjBlMGNiLWFhYjEtNDAxOC1iMzU0LWFmYThkNGU3MGIyOC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExN1QwNTU4NDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mOGFkZWQwYzcxMDZlOWI5MGJhNzg5YTlhZTY4NDFiYzVmYTYwYzI5ODE5MzQzNzc5MmY2MmZlYjJjODE5MjlkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.wMCB_TJ9o5VAGbugYuS9d4M6ETV55ll7wIsRaPWwyHg"> <br>
+>  <img width="1468" height="743" alt="Image" src="https://github.com/user-attachments/assets/fbfbe4da-4651-41a7-9b3b-f16af30a5e44" />
+<br>
 > * 프로젝트별 그룹 채팅<br>
 > * 팀원 간 실시간 커뮤니케이션<br>
 
 ### 캘린더 화면
-> <img alt="Image" width="1468" height="743" src="https://private-user-images.githubusercontent.com/169428018/515008594-c5c93722-bd96-4507-bbe2-569c312ab834.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjMzNTk0MjgsIm5iZiI6MTc2MzM1OTEyOCwicGF0aCI6Ii8xNjk0MjgwMTgvNTE1MDA4NTk0LWM1YzkzNzIyLWJkOTYtNDUwNy1iYmUyLTU2OWMzMTJhYjgzNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExN1QwNTU4NDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hOTU0MjEzMDI5MWJiMGEzODIxZmMzMmIxYTkxMDMyYmQ0YzBhYTNkMzk4ZTFjNWZkYTU5ZDYzODhkMDI1YTNiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.ochPaQfgQCacAnzr75IyngBq9R-WvZGKRNVXl12Yx4Q"> <br>
+> <img width="1468" height="743" alt="Image" src="https://github.com/user-attachments/assets/dcfeaec7-93c6-49d3-bd68-d7d6c64f3a6d" />
+<br>
 > * 업무/일정이 달력 위에 표시<br>
 > * 마감일/회의 일정 한눈에 확인<br>
 
