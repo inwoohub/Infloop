@@ -36,12 +36,14 @@
 
 ## 2. 💁🏻‍♂️ 팀원 소개
 
-|| (팀장) 정세준 | 김진성 | 황인우 |
-|:---:| :---: | :---: | :---: |
-|| <img width="163" height="166" alt="Image" src="https://github.com/user-attachments/assets/938038d8-e51c-4f22-a6dc-7626639c8fa7" /> | <img width="163" height="166" alt="Image" src="https://github.com/user-attachments/assets/801f31c3-d064-4d71-a1d1-a3dc8337ea22" /> | <img width="163" height="166" alt="Image" src="https://github.com/user-attachments/assets/d71a4389-1590-47c1-8ec0-2ba998e0b89a" /> |
+| (팀장) 정세준 | 김진성 | 황인우 |
+| :---: | :---: | :---: |
+| <img width="163" height="166" alt="Image" src="https://github.com/user-attachments/assets/938038d8-e51c-4f22-a6dc-7626639c8fa7" /> | <img width="163" height="166" alt="Image" src="https://github.com/user-attachments/assets/801f31c3-d064-4d71-a1d1-a3dc8337ea22" /> | <img width="163" height="166" alt="Image" src="https://github.com/user-attachments/assets/d71a4389-1590-47c1-8ec0-2ba998e0b89a" /> |
 | Github | [Github](https://github.com/gazxxni) | [Github](https://github.com/gwoninduk) | [Github](https://github.com/inwoohub) |
-|| BE & FE | BE & FE | BE & FE |
-| 역할 | 업무 생성 및 배정,<br>파일 및 DB 관리 | 회의록, 보고서,<br>로그, 팀매칭, 알림 | 세션 관리,<br>인증&인가,<br>프로필 수정,<br>채팅, 팀매칭, 캘린더 |
+| BE & FE | BE & FE | BE & FE |
+| * 프로젝트 일정 관리 <br> * 업무 생성 및 배정 구현 <br> * 파일 기능 구현 <br> * DB 관리 | 
+ * 회의록 구현 <br> * 보고서 구현 <br> * 활동 기록(로그) 구현 <br> * 알림 구현 <br> * 팀매칭 구현 | * 세션 및 인증 & 인가 <br> * 프로필 구현 <br> * 채팅 구현 <br>
+ * 캘린더 구현 <br> * 팀매칭 구현 |
 
 <br>
 
