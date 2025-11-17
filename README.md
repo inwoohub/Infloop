@@ -111,14 +111,12 @@
 
 
 ### 메인 화면
-> <img width="1468" height="743" alt="Image" src="https://github.com/user-attachments/assets/7ae594f9-04a0-4491-aa52-87876d7ceb21" />
-<br>
+> <img width="1468" height="743" alt="Image" src="https://github.com/user-attachments/assets/7ae594f9-04a0-4491-aa52-87876d7ceb21" /> <br>
 > * 진행 중인 프로젝트 리스트 및 진척도 <br>
 > * 내 일정, 내 업무, 알림, 채팅 진입 등 대시보드 역할 <br>
 
 ### 팀 매칭 화면
-> <img width="1468" height="743" alt="Image" src="https://github.com/user-attachments/assets/6a4204c9-50bd-4256-82c5-96f57dba9bbf" />
-<br>
+> <img width="1468" height="743" alt="Image" src="https://github.com/user-attachments/assets/6a4204c9-50bd-4256-82c5-96f57dba9bbf" /> <br>
 > * 과목별 팀 구하기 게시판<br>
 > * 팀 모집 글 작성 및 참여 의사 표시<br>
 
@@ -131,14 +129,12 @@
 > * 프로젝트 전체 진행 흐름 미리 확인<br>
 
 ### 업무 목록
-> <img width="1468" height="743" alt="Image" src="https://github.com/user-attachments/assets/c7c481d5-fec0-4841-a5b3-6a176928cbdc" />
-<br>
+> <img width="1468" height="743" alt="Image" src="https://github.com/user-attachments/assets/c7c481d5-fec0-4841-a5b3-6a176928cbdc" /> <br>
 > * 업무명, 담당자, 상태, 시작일, 마감일 목록<br>
 > * 필터/정렬을 통한 업무 관리<br>
 
 ### 업무 상세 화면
-> <img width="1468" height="743" alt="Image" src="https://github.com/user-attachments/assets/66017e58-1068-4b6b-8d77-d7074b7d89a1" />
-<br>
+> <img width="1468" height="743" alt="Image" src="https://github.com/user-attachments/assets/66017e58-1068-4b6b-8d77-d7074b7d89a1" /> <br>
 > * 업무 상태/담당자 변경<br>
 > * 댓글 작성 및 파일 첨부<br>
 > * 진행 상황 기록<br>
@@ -149,19 +145,16 @@
 > * 저장된 회의록 목록 확인 및 열람<br>
 
 ### 보고서 작성 화면
-> <img width="1468" height="743" alt="Image" src="https://github.com/user-attachments/assets/33f68f3d-4bc2-48ef-9d23-73dc35c69f8e" />
-<br>
+> <img width="1468" height="743" alt="Image" src="https://github.com/user-attachments/assets/33f68f3d-4bc2-48ef-9d23-73dc35c69f8e" /> <br>
 > * 중간 / 최종 보고서 작성 기능<br>
 
 ### 채팅 화면
->  <img width="1468" height="743" alt="Image" src="https://github.com/user-attachments/assets/fbfbe4da-4651-41a7-9b3b-f16af30a5e44" />
-<br>
+>  <img width="1468" height="743" alt="Image" src="https://github.com/user-attachments/assets/fbfbe4da-4651-41a7-9b3b-f16af30a5e44" /> <br>
 > * 프로젝트별 그룹 채팅<br>
 > * 팀원 간 실시간 커뮤니케이션<br>
 
 ### 캘린더 화면
-> <img width="1468" height="743" alt="Image" src="https://github.com/user-attachments/assets/dcfeaec7-93c6-49d3-bd68-d7d6c64f3a6d" />
-<br>
+> <img width="1468" height="743" alt="Image" src="https://github.com/user-attachments/assets/dcfeaec7-93c6-49d3-bd68-d7d6c64f3a6d" /> <br>
 > * 업무/일정이 달력 위에 표시<br>
 > * 마감일/회의 일정 한눈에 확인<br>
 
