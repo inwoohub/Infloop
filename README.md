@@ -201,16 +201,4 @@ src="https://private-user-images.githubusercontent.com/169428018/515008589-7790a
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-# Infloop
+# Team. Infloop
