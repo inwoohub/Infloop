@@ -200,5 +200,4 @@ src="https://private-user-images.githubusercontent.com/169428018/515008589-7790a
 > 로그 검색/필터링
 > * 프로젝트 활동 기반 자동 보고서 생성 및 Word 다운로드
 
-
-# Team. Infloop
+<br>
