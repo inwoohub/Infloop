@@ -38,7 +38,9 @@
  
 | (팀장) 정세준 | 김진성 | 황인우 |
 | --- | --- | --- |
-| <img width="163" height="166" alt="Image" src="https://github.com/user-attachments/assets/c51d27d7-d945-4fc8-b532-1c8453ffad06" /> | <img width="163" height="166" alt="Image" src="https://github.com/user-attachments/assets/63ab470b-508e-41b8-86db-9998ea15fb0e" /> | <img width="163" height="166" alt="Image" src="https://github.com/user-attachments/assets/2d624078-df82-469e-abf3-7398485608fa" /> |
+| <img width="163" height="166" alt="Image" src="https://github.com/user-attachments/assets/938038d8-e51c-4f22-a6dc-7626639c8fa7" /> | <img width="163" height="166" alt="Image" src="https://github.com/user-attachments/assets/801f31c3-d064-4d71-a1d1-a3dc8337ea22" />
+ | <img width="163" height="166" alt="Image" src="https://github.com/user-attachments/assets/d71a4389-1590-47c1-8ec0-2ba998e0b89a" />
+ |
 | [Github](https://github.com/gazxxni) | [Github](https://github.com/gwoninduk) | [Github](https://github.com/inwoohub) |
 | BE & FE | BE & FE | BE & FE |
 | 업무 생성 및 배정,<br>파일 관리 | 회의록, 보고서,<br>로그, 팀매칭, 알림 | 세션 관리,<br>인증&인가,<br>프로필 수정,<br>채팅, 팀매칭, 캘린더 |
@@ -52,10 +54,13 @@
 ## 4. 🌐 아키텍처 & 데이터베이스
 
 ### 4.1 전체 구조
-<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/1a4cbd28-5913-4c40-9812-cb680b587aac" />
+<img alt="Image" width="1280" height="720" src="https://private-user-images.githubusercontent.com/169428018/515008598-a2a610b0-2096-4628-ba57-26d39c7ac45e.PNG?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjMzNTk0MjgsIm5iZiI6MTc2MzM1OTEyOCwicGF0aCI6Ii8xNjk0MjgwMTgvNTE1MDA4NTk4LWEyYTYxMGIwLTIwOTYtNDYyOC1iYTU3LTI2ZDM5YzdhYzQ1ZS5QTkc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExN1QwNTU4NDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00Nzk5ZjJmMDEyNzc0NWE5ZjYyYTE2ZmY0ZDEyM2M3YzMzYmVkNTU4YjM2NzRlYjAzY2EwZTViMGIwYTk2OWExJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Zo8Goj2w-FLQCrcQv2Zg_yZcq6_SXP7HfAiUv3W0jtg">
+/>
 
 ### 4.2 데이터베이스
-<img width="1250" height="1250" alt="Image" src="https://github.com/user-attachments/assets/7f3159a0-8ad2-480f-bca1-4b42b474d3bf" />
+ <img alt="Image" width="1250" height="12
+50" src="https://private-user-images.githubusercontent.com/169428018/515008589-7790a366-9432-40eb-bef1-01a701bfdcee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjMzNTk0MjgsIm5iZiI6MTc2MzM1OTEyOCwicGF0aCI6Ii8xNjk0MjgwMTgvNTE1MDA4NTg5LTc3OTBhMzY2LTk0MzItNDBlYi1iZWYxLTAxYTcwMWJmZGNlZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExN1QwNTU4NDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mODhlODdjZjBkOTkzN2EwYWI3ZmNhNWYwYjk5MGRkYWMwYzNhOWE4M2I3NjRkN2I5ZDgxOTYwMDY0ZjJiZDE2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.2dxAtn8R42ifs92UcgQfRa4cjNmfqG95E788gkfU0r0">
+
 
 ## 5. 📁 프로젝트 구조 
 
